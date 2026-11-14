@@ -1,0 +1,4 @@
+Trial,Crossover Rate,Mutation Rate,Fitness,Theoretical Optimum,Fitness Gap,Efficiency (%)
+Trial 1,0.8,0.02,8.6,8.8,0.2,97.73
+Trial 2,0.7,0.03,8.6,8.8,0.2,97.73
+Trial 3,0.9,0.05,8.7,8.8,0.1,98.86
