@@ -3,6 +3,7 @@ import csv
 import random
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 # =========================================================
 # 1. CONFIGURATION
@@ -238,12 +239,14 @@ def load_dataset(path):
 
 try:
 
+    DATA_DIR = Path(__file__).resolve().parent
+
     original_header, original_ratings = load_dataset(
-        "program_ratings.csv"
+        DATA_DIR / "program_ratings.csv"
     )
 
     header, ratings = load_dataset(
-        "modified_program_ratings.csv"
+        DATA_DIR / "modified_program_ratings.csv"
     )
 
 except FileNotFoundError as error:
